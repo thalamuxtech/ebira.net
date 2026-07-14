@@ -277,10 +277,10 @@ function Community() {
         </h2>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-soft">
           Ebira.net rests on six years of Haleyouth’s work in Ebira-speaking
-          territory. A Community Advisory Board signs off on sensitive content,
-          and the Chief Language Advisor, Alhaji Salawo S. Salami of the Ebira
-          Development Project, has the final say on orthography and lexical
-          correctness.
+          territory. Under the plan, a Community Advisory Board signs off on
+          sensitive content and a Chief Language Advisor has the final say on
+          orthography and lexical correctness, so the community keeps
+          authority over its own language.
         </p>
       </Reveal>
 

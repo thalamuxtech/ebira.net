@@ -184,12 +184,12 @@ export const PARTNERS = [
   {
     name: "Ebira Development Project (EDP), Okene",
     role: "Dictionary, encyclopaedia, and orthographic authority",
-    status: "Letter of support received",
+    status: "Planned partnership",
   },
   {
     name: "Ohinoyi of Ebiraland’s Office",
     role: "Community endorsement and access",
-    status: "Relationship established",
+    status: "Planned engagement",
   },
   {
     name: "Kogi State University, Anyigba",
