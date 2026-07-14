@@ -139,13 +139,13 @@ body {
 }
 .tagline-marquee {
   background-image: linear-gradient(
-    90deg,
-    #00450e,
-    #00b70c,
-    #d4a017,
-    #b8482e,
-    #f2ff00,
-    #00450e
+    142deg,
+    #000000 25%,
+    #fefefe 25%,
+    #fff 50%,
+    var(--ink) 50%,
+    #ffffff 75%,
+    #000000 75%
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
