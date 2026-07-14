@@ -10,14 +10,21 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-5 py-14 sm:px-6">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <Link href="/" aria-label="Ebira.net home" className="inline-block">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/brand-logo.png"
-                alt="Ebira.net, learn, develop and preserve it"
-                width={170}
-                height={188}
-              />
+            <Link
+              href="/"
+              aria-label="Ebira.net home"
+              className="inline-flex flex-col gap-2.5"
+            >
+              <span className="flex items-center gap-3">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/icon-192.png" alt="" width={76} height={76} />
+                <span className="display text-3xl font-semibold tracking-tight text-ink">
+                  Ebira<span className="text-clay">.net</span>
+                </span>
+              </span>
+              <span className="tagline-marquee display text-lg font-semibold">
+                Learn, Develop and Preserve it.
+              </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-soft">
               The digital home for the Ebira language, its people, and its

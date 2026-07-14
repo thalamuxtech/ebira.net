@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, ShieldCheck } from "lucide-react";
 import { Hero } from "@/components/home/hero";
+import { WordsReveal } from "@/components/words-reveal";
 import { Reveal, RevealGroup, RevealItem } from "@/components/reveal";
 import { CountUp } from "@/components/count-up";
 import { PillarIcon } from "@/components/pillar-icon";
@@ -213,7 +214,7 @@ function Roadmap() {
             The roadmap
           </p>
           <h2 className="display mt-5 max-w-3xl text-3xl font-semibold leading-tight text-ink sm:text-5xl">
-            Every phase ships something real.
+            <WordsReveal text="Every phase ships something real." accentLast={2} />
           </h2>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-soft">
             We do not wait for the whole platform to be finished. The plan runs two
@@ -235,12 +236,9 @@ function Roadmap() {
                   >
                     {i}
                   </span>
-                  <div>
-                    <p className="text-sm font-bold uppercase tracking-wide text-clay">
-                      {phase.phase}
-                    </p>
-                    <p className="text-xs text-ink-faint">{phase.window}</p>
-                  </div>
+                  <p className="text-sm font-bold uppercase tracking-wide text-clay">
+                    {phase.phase}
+                  </p>
                 </div>
                 <h3 className="display mt-4 text-xl font-semibold text-ink">
                   {phase.title}

@@ -133,7 +133,6 @@ export const STATS = [
 
 export interface RoadmapPhase {
   phase: string;
-  window: string;
   title: string;
   items: string[];
 }
@@ -141,7 +140,6 @@ export interface RoadmapPhase {
 export const ROADMAP: RoadmapPhase[] = [
   {
     phase: "Phase 0",
-    window: "Months 0–2",
     title: "Foundation",
     items: [
       "Landing page, brand, and mailing list",
@@ -152,7 +150,6 @@ export const ROADMAP: RoadmapPhase[] = [
   },
   {
     phase: "Phase 1",
-    window: "Months 2–8",
     title: "Dictionary, App & Corpus",
     items: [
       "Dictionary with search, audio, dialects",
@@ -163,7 +160,6 @@ export const ROADMAP: RoadmapPhase[] = [
   },
   {
     phase: "Phase 2",
-    window: "Months 8–16",
     title: "Heritage, People & Diaspora",
     items: [
       "Riddles, proverbs, stories, and songs",
@@ -174,7 +170,6 @@ export const ROADMAP: RoadmapPhase[] = [
   },
   {
     phase: "Phase 3",
-    window: "Months 16–24+",
     title: "Education & Voice",
     items: [
       "Sentence-level translation, ASR and TTS",

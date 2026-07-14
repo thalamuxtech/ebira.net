@@ -132,6 +132,28 @@ body {
   opacity: 0.85;
 }
 
+/* Tagline: gradient text that sweeps like a marquee */
+@keyframes tagline-sweep {
+  from { background-position: 0% 50%; }
+  to { background-position: 200% 50%; }
+}
+.tagline-marquee {
+  background-image: linear-gradient(
+    90deg,
+    #00450e,
+    #00b70c,
+    #d4a017,
+    #b8482e,
+    #f2ff00,
+    #00450e
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: tagline-sweep 7s linear infinite;
+}
+
 /* Slow marquee for the word strip */
 @keyframes marquee {
   from { transform: translateX(0); }
@@ -176,7 +198,8 @@ body {
   }
   .marquee-track,
   .caret,
-  .drift {
+  .drift,
+  .tagline-marquee {
     animation: none;
   }
 }
