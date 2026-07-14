@@ -11,15 +11,13 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
             <Link href="/" aria-label="Ebira.net home" className="inline-block">
-              <span className="inline-block rounded-2xl bg-white p-3 shadow-soft">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/brand-logo.png"
-                  alt="Ebira.net"
-                  width={150}
-                  height={168}
-                />
-              </span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/brand-logo.png"
+                alt="Ebira.net, learn, develop and preserve it"
+                width={170}
+                height={188}
+              />
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-soft">
               The digital home for the Ebira language, its people, and its
