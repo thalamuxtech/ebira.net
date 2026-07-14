@@ -8,7 +8,7 @@ import { ContributeFlow } from "@/components/contribute/flow";
 export const metadata: Metadata = {
   title: "Contribute",
   description:
-    "Add a word, riddle, or proverb to the Ebira record — from any phone, with consent and credit handled at the door.",
+    "Add a word, riddle, or proverb to the Ebira record from any phone. Consent and credit are settled before anything is stored.",
 };
 
 const PROMISES = [
@@ -25,7 +25,7 @@ const PROMISES = [
   {
     icon: Trophy,
     title: "Credit that lasts",
-    body: "Published items carry their contributor’s name permanently — and the leaderboard celebrates the most generous memories.",
+    body: "Published items carry their contributor’s name permanently, and the leaderboard celebrates the most generous memories.",
   },
 ];
 
@@ -35,7 +35,7 @@ export default function ContributePage() {
       <PageHero
         kicker="Pillar · Contribute & record"
         title="Add the first word you remember."
-        lede="Every Ebira speaker holds a piece of the dictionary. Submit a word, riddle, or proverb from any phone — the in-browser voice recorder and 2G-friendly offline queue arrive with the corpus tooling."
+        lede="Every Ebira speaker holds a piece of the dictionary. Submit a word, riddle, or proverb from any phone. The in-browser voice recorder and the 2G-friendly offline queue ship with the corpus tooling."
         status="preview"
       />
 

@@ -125,11 +125,11 @@ export function DictionarySearch() {
       {results.length === 0 && (
         <div className="mt-6 rounded-2xl border border-dashed border-line-strong bg-sunken/50 p-8 text-center">
           <p className="display text-lg font-medium text-ink">
-            Not in the seed yet — but maybe you know it.
+            Not in the seed yet. Maybe you know it.
           </p>
           <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-ink-soft">
             The preview holds only a handful of entries. If you remember this
-            word, it belongs in the dictionary —{" "}
+            word, it belongs in the dictionary.{" "}
             <Link
               href="/contribute"
               className="font-semibold text-clay underline-offset-4 hover:underline"

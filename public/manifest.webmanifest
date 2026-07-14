@@ -1,5 +1,5 @@
 {
-  "name": "Ebira.net — the digital home of the Ebira language",
+  "name": "Ebira.net, the digital home of the Ebira language",
   "short_name": "Ebira.net",
   "description": "Dictionary, translator, oral heritage, history, and learning for the Ebira language.",
   "start_url": "/",
@@ -8,9 +8,15 @@
   "theme_color": "#141b2e",
   "icons": [
     {
-      "src": "/icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
       "purpose": "any"
     }
   ]

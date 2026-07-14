@@ -43,7 +43,7 @@ export function WaitlistForm({ source = "landing" }: { source?: string }) {
           </p>
           <p className="mt-0.5 text-sm text-ink-soft">
             {state === "sent"
-              ? "We’ll write when the dictionary opens. Ẹ́bírà lives here — and now, so do you."
+              ? "We’ll write when the dictionary opens."
               : "We couldn’t reach the server just now, so your signup is saved on this device and will sync automatically on a future visit."}
           </p>
         </div>
@@ -92,7 +92,7 @@ export function WaitlistForm({ source = "landing" }: { source?: string }) {
       >
         {state === "error"
           ? "Please enter a valid email address."
-          : "No spam — only launch news and ways to contribute."}
+          : "No spam, just launch news and ways to contribute."}
       </p>
     </form>
   );

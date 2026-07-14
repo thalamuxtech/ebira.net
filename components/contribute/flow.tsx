@@ -45,7 +45,7 @@ export function ContributeFlow() {
     setError("");
     if (next > step) {
       if (step === 1 && !ebira.trim()) {
-        setError("Please write the Ebira text — spelling as you remember it is fine.");
+        setError("Please write the Ebira text. Spelling it as you remember it is fine.");
         return;
       }
       if (step === 1 && !english.trim()) {
@@ -59,7 +59,7 @@ export function ContributeFlow() {
 
   async function submit() {
     if (!consent) {
-      setError("Open release consent is required — it’s what lets the whole community use your contribution.");
+      setError("Open release consent is required. It is what lets the whole community use your contribution.");
       return;
     }
     setError("");
@@ -88,7 +88,7 @@ export function ContributeFlow() {
         </span>
         <h2 className="display mt-5 text-2xl font-semibold text-ink">
           {status === "sent"
-            ? "Received — thank you."
+            ? "Received. Thank you."
             : "Saved on this device."}
         </h2>
         <p className="mt-3 max-w-md leading-relaxed text-ink-soft">
@@ -185,7 +185,7 @@ export function ContributeFlow() {
                   ))}
                 </div>
                 <p className="mt-4 text-sm text-ink-faint">
-                  Voice recordings arrive with the corpus recorder — for now,
+                  Voice recordings arrive with the corpus recorder. For now,
                   text travels fine.
                 </p>
               </fieldset>
@@ -209,7 +209,7 @@ export function ContributeFlow() {
                       rows={2}
                       value={ebira}
                       onChange={(e) => setEbira(e.target.value)}
-                      placeholder="Spelling doesn’t need to be perfect — reviewers align it to the EDP standard."
+                      placeholder="Spelling does not need to be perfect. Reviewers align it to the EDP standard."
                       className="mt-1.5 w-full rounded-2xl border border-line-strong bg-bg px-4 py-3 text-[15px] text-ink placeholder:text-ink-faint focus:border-clay focus:outline-none"
                     />
                   </div>

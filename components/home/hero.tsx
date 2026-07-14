@@ -65,10 +65,11 @@ export function Hero() {
           {...rise(0.34)}
           className="mt-7 max-w-2xl text-lg leading-relaxed text-ink-soft sm:text-xl"
         >
-          Four million people speak Ebira. Almost none of it lives online — no
-          dictionary, no translator, no digital record. Ebira.net is the open
-          platform that changes that: preserve the language, engage the
-          diaspora, and enable education and research.
+          Four million people speak Ebira, yet the language barely exists
+          online. No dictionary, no translator, no record a young person in
+          Lagos or London can reach. Ebira.net is the platform Haleyouth
+          Foundation is building to change that, openly and with the
+          community.
         </motion.p>
 
         <motion.div

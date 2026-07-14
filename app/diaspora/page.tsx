@@ -8,14 +8,14 @@ import { WaitlistForm } from "@/components/waitlist-form";
 export const metadata: Metadata = {
   title: "Diaspora Hub",
   description:
-    "The home base for Ebira people worldwide — find each other, meet, tell your story, and fund the language one adopted word at a time.",
+    "The home base for Ebira people worldwide: find each other, meet, tell your story, and fund the language one adopted word at a time.",
 };
 
 const FEATURES = [
   {
     icon: UserRound,
     title: "Member directory",
-    body: "Opt-in profiles so Anebira in Lagos, London, Houston, or Dubai can find each other — by city, by clan, by interest.",
+    body: "Opt-in profiles so Anebira in Lagos, London, Houston, or Dubai can find each other by city, by clan, or by shared interest.",
   },
   {
     icon: MessagesSquare,
@@ -25,7 +25,7 @@ const FEATURES = [
   {
     icon: CalendarDays,
     title: "Events",
-    body: "Cultural festivals, meetups, and virtual language cafés — a calendar that keeps the community in one rhythm.",
+    body: "Cultural festivals, meetups, and virtual language cafés, on one calendar that keeps the community in rhythm.",
   },
   {
     icon: HandCoins,
@@ -40,12 +40,12 @@ export default function DiasporaPage() {
       <PageHero
         kicker="Pillar · Diaspora Hub"
         title="Wherever you are, Ẹ́bírà has a place for you."
-        lede="The engagement layer for Ebira people outside the homeland: find each other, gather, tell your story — and put your stake in the language’s future, one adopted word at a time."
+        lede="For Ebira people outside the homeland: find each other, gather, tell your story, and put your stake in the language’s future, one adopted word at a time."
         status="coming-soon"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14 sm:px-6">
-        <DemoNotice text="The hub launches in Phase 2. Waitlist members become the founding cohort — first profiles, first forum threads, first adopted words." />
+        <DemoNotice text="The hub launches in Phase 2. Waitlist members become the founding cohort: first profiles, first forum threads, first adopted words." />
 
         <RevealGroup className="mt-12 grid gap-4 sm:grid-cols-2">
           {FEATURES.map((f) => (
@@ -69,8 +69,8 @@ export default function DiasporaPage() {
               Join the founding cohort.
             </h2>
             <p className="mt-3 leading-relaxed text-ink-soft">
-              Ebira unions and diaspora associations: we would love to partner
-              on events and drives — write to{" "}
+              Ebira unions and diaspora associations, we would love to partner
+              on events and drives. Write to{" "}
               <a
                 href="mailto:hello@ebira.net"
                 className="font-semibold text-clay underline-offset-4 hover:underline"

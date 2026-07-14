@@ -14,8 +14,8 @@ export default function TranslatePage() {
     <>
       <PageHero
         kicker="Pillar · Translator"
-        title="English ↔ Ebira, honest about its confidence."
-        lede="Dictionary-backed word and phrase lookup comes first — reliable, verifiable, offline-capable. Sentence-level machine translation follows as the parallel corpus grows, always flagged as a draft for community correction."
+        title="English to Ebira, and back again."
+        lede="Word and phrase lookup comes first, backed by the dictionary so every result can be checked. Sentence-level machine translation follows as the parallel corpus grows, and machine drafts are always labelled as drafts for the community to correct."
         status="preview"
       />
       <section className="mx-auto max-w-4xl px-5 py-12 sm:px-6">

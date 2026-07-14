@@ -7,14 +7,14 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/reveal";
 export const metadata: Metadata = {
   title: "People’s Encyclopedia",
   description:
-    "A sourced, editor-reviewed record of notable Ebira people — past and present, across leadership, scholarship, the arts, sport, faith, and public service.",
+    "A sourced, editor-reviewed record of notable Ebira people, past and present, across leadership, scholarship, the arts, sport, faith, and public service.",
 };
 
 const PRINCIPLES = [
   {
     icon: UsersRound,
     title: "Community-nominated",
-    body: "Anyone can nominate a notable Ebira person — from Ebiraland or the diaspora, historical or living, of any gender.",
+    body: "Anyone can nominate a notable Ebira person, from Ebiraland or the diaspora, historical or living, of any gender.",
   },
   {
     icon: BookMarked,
@@ -29,7 +29,7 @@ const PRINCIPLES = [
   {
     icon: ScrollText,
     title: "Cross-linked",
-    body: "Entries connect to Ebira History (era, institution) and the Diaspora Hub (living members who opt in) — one web of the people’s record.",
+    body: "Entries connect to Ebira History by era and institution, and to the Diaspora Hub for living members who opt in.",
   },
 ];
 
@@ -48,12 +48,12 @@ export default function PeoplePage() {
       <PageHero
         kicker="Pillar · People’s Encyclopedia"
         title="A community’s record of its own."
-        lede="Notable Ebira people, past and present — documented properly, so the next generation can see who came before them and what is possible. Known traditionally as the Sons Encyclopedia; it records Ebira people of all genders."
+        lede="Notable Ebira people, past and present, documented properly, so the next generation can see who came before them and what is possible. Known traditionally as the Sons Encyclopedia, it records Ebira people of all genders."
         status="coming-soon"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14 sm:px-6">
-        <DemoNotice text="The encyclopedia launches in Phase 2 with the first 100 sourced entries. Nominations open with the contribute tools — the criteria below are settled now, with the Community Advisory Board." />
+        <DemoNotice text="The encyclopedia launches in Phase 2 with the first 100 sourced entries. Nominations open with the contribute tools; the criteria below are being settled now with the Community Advisory Board." />
 
         <RevealGroup className="mt-12 grid gap-4 sm:grid-cols-2">
           {PRINCIPLES.map((p) => (
@@ -87,9 +87,9 @@ export default function PeoplePage() {
               ))}
             </div>
             <p className="mt-6 max-w-2xl leading-relaxed text-ink-soft">
-              Have someone in mind — a grandmother who taught a town to weave,
-              a scholar, a chief, an athlete? Send the name and what you know
-              to{" "}
+              Have someone in mind? A grandmother who taught a town to
+              weave, a scholar, a chief, an athlete. Send the name and what
+              you know to{" "}
               <a
                 href="mailto:hello@ebira.net"
                 className="font-semibold text-clay underline-offset-4 hover:underline"

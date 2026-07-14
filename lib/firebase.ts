@@ -8,7 +8,7 @@ import {
   serverTimestamp,
 } from "firebase/firestore";
 
-// Public client identifiers, not secrets — real protection lives in
+// Public client identifiers, not secrets. Real protection lives in
 // Firestore security rules (the public may only `create` into `waitlist`).
 const firebaseConfig = {
   apiKey: "AIzaSyCuAjw85Z6si9cYoTQC8DTso0CDNtIZpwk",
@@ -44,7 +44,7 @@ function writeQueue(queue: QueuedSignup[]) {
   try {
     localStorage.setItem(QUEUE_KEY, JSON.stringify(queue));
   } catch {
-    // storage full or unavailable — nothing more we can do offline
+    // storage full or unavailable; nothing more we can do offline
   }
 }
 
@@ -121,7 +121,7 @@ export async function submitContribution(
   }
 }
 
-/** Retry queued signups and contributions — call once on page load. */
+/** Retry queued signups and contributions. Call once on page load. */
 export async function flushWaitlistQueue(): Promise<void> {
   const queue = readQueue();
   if (queue.length) {
@@ -156,6 +156,6 @@ export async function flushWaitlistQueue(): Promise<void> {
     }
     localStorage.setItem(SUBMIT_QUEUE_KEY, JSON.stringify(left));
   } catch {
-    // storage unavailable — nothing to flush
+    // storage unavailable; nothing to flush
   }
 }

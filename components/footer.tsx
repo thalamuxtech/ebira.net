@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Wordmark } from "@/components/wordmark";
 import { PILLARS } from "@/lib/site";
 
 const YEAR = 2026;
@@ -11,10 +10,20 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-5 py-14 sm:px-6">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
           <div>
-            <Wordmark />
+            <Link href="/" aria-label="Ebira.net home" className="inline-block">
+              <span className="inline-block rounded-2xl bg-white p-3 shadow-soft">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/brand-logo.png"
+                  alt="Ebira.net"
+                  width={150}
+                  height={168}
+                />
+              </span>
+            </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-soft">
               The digital home for the Ebira language, its people, and its
-              diaspora — built openly with the community.
+              diaspora. Built openly with the community.
             </p>
             <p className="mt-3 text-sm text-ink-soft">
               A project by{" "}
@@ -28,7 +37,7 @@ export function Footer() {
               </a>
             </p>
             <p className="mt-4 text-xs leading-relaxed text-ink-faint">
-              Data CC BY 4.0 · Code Apache 2.0 · Dataset cards CC0. Nothing on
+              Data CC BY 4.0. Code Apache 2.0. Dataset cards CC0. Nothing on
               this platform ships under a closed licence.
             </p>
           </div>
@@ -79,7 +88,14 @@ export function Footer() {
 
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-widest text-ink-faint">
-              Haleyouth Foundation
+              <a
+                href="https://haleyouthfoundation.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors duration-200 hover:text-clay"
+              >
+                Haleyouth Foundation
+              </a>
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm text-ink-soft">
               <li>
@@ -109,7 +125,7 @@ export function Footer() {
                   target="_blank"
                   className="transition-colors duration-200 hover:text-clay"
                 >
-                  GitHub — open source
+                  GitHub, open source
                 </a>
               </li>
             </ul>

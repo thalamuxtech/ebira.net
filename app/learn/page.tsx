@@ -9,14 +9,14 @@ import { WaitlistForm } from "@/components/waitlist-form";
 export const metadata: Metadata = {
   title: "Learn Ebira",
   description:
-    "Structured, audio-first Ebira lessons — alphabet and tone, greetings, numbers, and everyday phrases — with streaks, quizzes, and certificates.",
+    "Structured, audio-first Ebira lessons covering alphabet and tone, greetings, numbers, and everyday phrases, with streaks, quizzes, and certificates.",
 };
 
 const UNITS = [
   {
     unit: "Unit 1",
     title: "Alphabet & tone",
-    body: "The sounds of Ebira, the orthography, and how tone changes meaning — trained by ear from day one.",
+    body: "The sounds of Ebira, the orthography, and how tone changes meaning, trained by ear from day one.",
   },
   {
     unit: "Unit 2",
@@ -36,7 +36,7 @@ const UNITS = [
   {
     unit: "Unit 5",
     title: "Home & food",
-    body: "The household, cooking, and eating — the vocabulary of daily life where language lives longest.",
+    body: "The household, cooking, and eating: the vocabulary of daily life, where language lives longest.",
   },
   {
     unit: "Unit 6",
@@ -49,7 +49,7 @@ const FEATURES = [
   {
     icon: Headphones,
     title: "Audio-first drills",
-    body: "Every item is spoken by corpus voices — real Ebira speakers, not synthesis, until the TTS is good enough to earn its place.",
+    body: "Every item is spoken by real Ebira speakers from the corpus, not synthesis, until the TTS is good enough to earn its place.",
   },
   {
     icon: Flame,
@@ -64,7 +64,7 @@ const FEATURES = [
   {
     icon: Award,
     title: "Certificates that count",
-    body: "Completion certificates in Phase 2 — stepping toward the university-recognised certificate and degree pathway in Phase 3.",
+    body: "Completion certificates arrive in Phase 2 and build toward the university-recognised certificate and degree pathway in Phase 3.",
   },
 ];
 
@@ -74,12 +74,12 @@ export default function LearnPage() {
       <PageHero
         kicker="Pillar · Learn Ebira"
         title="From your first greeting to your first riddle."
-        lede="A structured, self-paced path from beginner to intermediate — audio-first, tone-aware, and built on the same corpus that powers the dictionary. Learn on your phone, offline, wherever the diaspora took you."
+        lede="A structured, self-paced path from beginner to intermediate: audio-first, tone-aware, and built on the same corpus that powers the dictionary. Learn on your phone, offline, wherever the diaspora took you."
         status="in-design"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14 sm:px-6">
-        <DemoNotice text="The beginner track launches in Phase 2 with the corpus audio. This is the planned curriculum — join the waitlist below to be in the first cohort." />
+        <DemoNotice text="The beginner track launches in Phase 2 with the corpus audio. This is the planned curriculum; join the waitlist below to be in the first cohort." />
 
         <Reveal className="mt-12">
           <h2 className="display text-2xl font-semibold text-ink sm:text-3xl">
@@ -142,7 +142,7 @@ export default function LearnPage() {
               Be in the first cohort.
             </h2>
             <p className="mt-3 leading-relaxed text-ink-soft">
-              Waitlist members get first access to lessons — and early
+              Waitlist members get first access to lessons, and early
               learners shape the curriculum. Meanwhile,{" "}
               <Link
                 href="/dictionary"

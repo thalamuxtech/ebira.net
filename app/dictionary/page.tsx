@@ -6,7 +6,7 @@ import { DictionarySearch } from "@/components/dictionary/search";
 export const metadata: Metadata = {
   title: "Dictionary",
   description:
-    "Search the growing Ebira–English dictionary: meanings, dialects, tone, and — soon — audio pronunciation from the community corpus.",
+    "Search the growing Ebira–English dictionary: meanings, dialects, tone, and soon audio pronunciation from the community corpus.",
 };
 
 export default function DictionaryPage() {

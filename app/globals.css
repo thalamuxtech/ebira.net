@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* ─────────────────────────────────────────────────────────────
-   Ebira.net design tokens — earth & heritage system
+   Ebira.net design tokens: earth & heritage system
    Anchors: indigo-night, warm clay, gold-ochre, ivory, sage
    ───────────────────────────────────────────────────────────── */
 :root {
@@ -116,7 +116,7 @@ body {
   background: var(--gold);
 }
 
-/* Woven divider drawn with CSS — cheap, crisp, Ebira-textile inspired */
+/* Woven divider drawn with CSS: cheap, crisp, Ebira-textile inspired */
 .motif-divider {
   height: 6px;
   background-image: linear-gradient(

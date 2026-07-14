@@ -26,7 +26,7 @@ export const PILLARS: Pillar[] = [
     slug: "translate",
     href: "/translate",
     title: "Translator",
-    line: "English ↔ Ebira, honest about its confidence.",
+    line: "English to Ebira and back, with sources you can check.",
     detail:
       "Word and phrase lookup first, sentence-level translation as the 25,000-pair parallel corpus grows. Voice input and read-aloud arrive with the corpus models.",
     status: "preview",
@@ -38,7 +38,7 @@ export const PILLARS: Pillar[] = [
     title: "Learn Ebira",
     line: "Alphabet and tone to everyday conversation, audio-first.",
     detail:
-      "Structured lessons with drills, quizzes, streaks, and certificates — stepping toward a formal certificate and degree pathway with university partners.",
+      "Structured lessons with drills, quizzes, streaks, and certificates. The track builds toward a recognised certificate and, later, a degree pathway with university partners.",
     status: "in-design",
     icon: "GraduationCap",
   },
@@ -48,7 +48,7 @@ export const PILLARS: Pillar[] = [
     title: "Riddles & Heritage",
     line: "Riddles, proverbs, stories, and songs from the elders.",
     detail:
-      "A curated library of Ebira oral tradition with audio, English gloss, and answer-reveal riddles — the most shareable pillar, and the growth engine.",
+      "A library of riddles, proverbs, stories, and songs, each with audio and an English gloss. This is the content people pass around, and it is how the diaspora finds its way in.",
     status: "in-design",
     icon: "Sparkles",
   },
@@ -56,7 +56,7 @@ export const PILLARS: Pillar[] = [
     slug: "history",
     href: "/history",
     title: "Ebira History",
-    line: "Origins, institutions, festivals — sourced and reviewed.",
+    line: "Origins, institutions, and festivals, sourced and reviewed.",
     detail:
       "A structured account of the Ebira people across the Confluence region, with a timeline, maps, primary sources, and elder testimony.",
     status: "coming-soon",
@@ -88,7 +88,7 @@ export const PILLARS: Pillar[] = [
     title: "Contribute & Record",
     line: "Add a word or a recording from any phone, even on 2G.",
     detail:
-      "Built on the Voices of the Middle Belt recorder — submissions flow through native-speaker review, with consent and credit handled at the door.",
+      "Built on the Voices of the Middle Belt recorder. Native speakers review every submission, and consent and credit are settled before anything is stored.",
     status: "preview",
     icon: "Mic",
   },
@@ -98,7 +98,7 @@ export const PILLARS: Pillar[] = [
     title: "Open Corpus & API",
     line: "Open data and a public API for researchers and builders.",
     detail:
-      "Versioned releases of the dictionary and corpus — CC BY 4.0 data, Apache 2.0 code — with a read API for Masakhane teams, labs, and app developers.",
+      "Versioned releases of the dictionary and corpus (CC BY 4.0 data, Apache 2.0 code) plus a read API for Masakhane teams, university labs, and app developers.",
     status: "coming-soon",
     icon: "Database",
   },
@@ -127,7 +127,7 @@ export const STATS = [
     value: 0,
     suffix: "",
     label: "presence in global datasets",
-    note: "absent from NLLB-200, Common Voice, and FLEURS — until now",
+    note: "absent from NLLB-200, Common Voice, and FLEURS. That changes here",
   },
 ];
 
@@ -229,7 +229,7 @@ export const NAV_LINKS = [
 
 /** Words shown in the hero signature moment and the marquee strip. */
 export const SHOWCASE_WORDS = [
-  { word: "Ẹ́bírà", gloss: "our language — and our character" },
+  { word: "Ẹ́bírà", gloss: "our language, and our character" },
   { word: "Anebira", gloss: "the Ebira people" },
   { word: "Ohomorihi", gloss: "God, the giver of rain" },
   { word: "Ohinoyi", gloss: "paramount ruler of Ebiraland" },

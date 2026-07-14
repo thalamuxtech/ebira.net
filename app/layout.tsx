@@ -18,11 +18,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://ebira.net"),
   title: {
-    default: "Ebira.net — the digital home of the Ebira language",
+    default: "Ebira.net, the digital home of the Ebira language",
     template: "%s · Ebira.net",
   },
   description:
-    "Dictionary, translator, riddles, history, and learning for the Ebira language — built openly with the community by Haleyouth Foundation. Ẹ́bírà lives here.",
+    "Dictionary, translator, riddles, history, and learning for the Ebira language, built openly with the community by Haleyouth Foundation.",
   keywords: [
     "Ebira",
     "Ebira language",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     "language preservation",
   ],
   openGraph: {
-    title: "Ebira.net — Ẹ́bírà lives here",
+    title: "Ebira.net: Ẹ́bírà lives here",
     description:
       "The digital home for the Ebira language, its people, and its diaspora: dictionary, translator, oral heritage, history, and learning.",
     url: "https://ebira.net",
@@ -44,7 +44,13 @@ export const metadata: Metadata = {
     type: "website",
   },
   manifest: "/manifest.webmanifest",
-  icons: { icon: "/icon.svg" },
+  icons: {
+    icon: [
+      { url: "/icon-64.png", sizes: "64x64", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    apple: [{ url: "/icon-192.png", sizes: "192x192", type: "image/png" }],
+  },
 };
 
 export const viewport: Viewport = {

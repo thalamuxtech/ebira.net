@@ -6,7 +6,7 @@ import { RotateCcw, Volume2 } from "lucide-react";
 
 /**
  * Interactive demo of the riddle answer-reveal pattern. The copy is a
- * placeholder describing the format — real riddles arrive from the
+ * placeholder describing the format; real riddles arrive from the
  * community recording drives, in Ebira with audio and an English gloss.
  */
 export function RiddleCard() {
@@ -21,7 +21,7 @@ export function RiddleCard() {
         style={{ transformStyle: "preserve-3d" }}
         className="relative min-h-96 sm:min-h-80"
       >
-        {/* front — the question */}
+        {/* front: the question */}
         <div
           style={{ backfaceVisibility: "hidden" }}
           className={`absolute inset-0 flex flex-col rounded-3xl border border-line bg-[#141b2e] p-7 text-[#f1ecdd] shadow-lift ${
@@ -32,7 +32,7 @@ export function RiddleCard() {
             Riddle · sample format
           </span>
           <p className="display mt-5 text-2xl font-medium leading-snug">
-            The riddle asks its question here — in Ẹ́bírà first, with tone
+            The riddle asks its question here, in Ẹ́bírà first, with tone
             marks, exactly as the elder spoke it.
           </p>
           <p className="mt-3 text-sm italic text-[#b9bfd2]">
@@ -47,7 +47,7 @@ export function RiddleCard() {
           </button>
         </div>
 
-        {/* back — the answer */}
+        {/* back: the answer */}
         <div
           style={{
             backfaceVisibility: "hidden",

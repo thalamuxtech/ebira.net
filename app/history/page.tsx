@@ -6,13 +6,13 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/reveal";
 export const metadata: Metadata = {
   title: "Ebira History",
   description:
-    "A structured, sourced account of the Ebira people — origins, institutions, festivals, and culture across the Confluence region.",
+    "A structured, sourced account of the Ebira people: origins, institutions, festivals, and culture across the Confluence region.",
 };
 
 const THEMES = [
   {
     era: "Origins & migration",
-    body: "Where the Ebira came from and how they settled the Confluence region — Okene, Adavi, Okehi, Ajaokuta, and beyond — told from oral tradition and checked against the historical record.",
+    body: "Where the Ebira came from and how they settled Okene, Adavi, Okehi, Ajaokuta, and the wider Confluence region, told from oral tradition and checked against the historical record.",
   },
   {
     era: "Institutions",
@@ -28,7 +28,7 @@ const THEMES = [
   },
   {
     era: "The modern era",
-    body: "Colonial encounter, education, the creation of Kogi State, and the growth of the diaspora — the forces reshaping how the language is spoken and passed on.",
+    body: "Colonial encounter, education, the creation of Kogi State, and the growth of the diaspora: the forces reshaping how the language is spoken and passed on.",
   },
 ];
 
@@ -38,12 +38,12 @@ export default function HistoryPage() {
       <PageHero
         kicker="Pillar · History"
         title="A people’s record, properly sourced."
-        lede="Ebira history for learners, students, and the diaspora — with a timeline and map view, primary sources, and elder testimony. Every article is reviewed by the Chief Language Advisor and the Community Advisory Board before it publishes."
+        lede="Ebira history for learners, students, and the diaspora, with a timeline, a map view, primary sources, and elder testimony. Every article is reviewed by the Chief Language Advisor and the Community Advisory Board before it publishes."
         status="coming-soon"
       />
 
       <section className="mx-auto max-w-4xl px-5 py-14 sm:px-6">
-        <DemoNotice text="Articles are in research now, drawn from the EDP Heritage Encyclopaedia, elder interviews, and academic partners. The outline below is the planned shape of the collection — 30 sourced articles in Phase 2, 80 by Phase 3." />
+        <DemoNotice text="Articles are in research now, drawn from the EDP Heritage Encyclopaedia, elder interviews, and academic partners. The outline below is the planned shape of the collection: 30 sourced articles in Phase 2, then 80 by Phase 3." />
 
         <div className="relative mt-14">
           <div
@@ -79,7 +79,7 @@ export default function HistoryPage() {
             </h2>
             <p className="mt-3 max-w-2xl leading-relaxed text-ink-soft">
               Family records, photographs, or an elder whose testimony should
-              be recorded — write to{" "}
+              be recorded? Write to{" "}
               <a
                 href="mailto:hello@ebira.net"
                 className="font-semibold text-clay underline-offset-4 hover:underline"

@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const entry = getEntry(id);
   if (!entry) return { title: "Entry not found" };
   return {
-    title: `${entry.headword} — Ebira dictionary`,
+    title: `${entry.headword} · Ebira dictionary`,
     description: `${entry.headword} (${entry.pos}, ${entry.dialect}): ${entry.senses[0]}`,
   };
 }

@@ -9,14 +9,14 @@ import { Reveal, RevealGroup, RevealItem } from "@/components/reveal";
 export const metadata: Metadata = {
   title: "Riddles & Oral Heritage",
   description:
-    "Ebira riddles, proverbs, folk stories, and songs — recorded from elders, glossed in English, and preserved with audio.",
+    "Ebira riddles, proverbs, folk stories, and songs, recorded from elders, glossed in English, and preserved with audio.",
 };
 
 const TYPES = [
   {
     icon: Puzzle,
     title: "Riddles",
-    body: "The distinctive, shareable format — question, pause, reveal — with the elder’s voice and an English gloss.",
+    body: "Question, pause, reveal. The format everyone knows from the fireside, with the elder’s voice and an English gloss.",
   },
   {
     icon: Quote,
@@ -31,7 +31,7 @@ const TYPES = [
   {
     icon: Music4,
     title: "Songs & praise poetry",
-    body: "Naming traditions, work songs, and festival poetry — the music of the language.",
+    body: "Naming traditions, work songs, and festival poetry: the music of the language.",
   },
 ];
 
@@ -41,12 +41,12 @@ export default function HeritagePage() {
       <PageHero
         kicker="Pillar · Oral heritage"
         title="The riddles your grandmother knew, kept."
-        lede="A curated, categorised library of Ebira oral tradition — riddles with answer-reveal, proverbs with their double meanings, stories and songs from the elders — recorded before it is lost, shared so it lives."
+        lede="A curated library of Ebira oral tradition: riddles with answer-reveal, proverbs with their double meanings, and the stories and songs of the elders. Recorded before it is lost, and shared so it lives."
         status="in-design"
       />
 
       <section className="mx-auto max-w-6xl px-5 py-14 sm:px-6">
-        <DemoNotice text="This pillar launches in Phase 2, after the elder recording drives. The card below shows how a published riddle will work — content arrives from the community, reviewed by the Community Advisory Board." />
+        <DemoNotice text="This pillar launches in Phase 2, after the elder recording drives. The card below shows how a published riddle will work; the content itself comes from the community and is reviewed by the Community Advisory Board." />
 
         <div className="mt-12 grid items-start gap-10 lg:grid-cols-[1fr_1.1fr]">
           <Reveal>
@@ -54,8 +54,9 @@ export default function HeritagePage() {
               Try the reveal.
             </h2>
             <p className="mt-3 max-w-md leading-relaxed text-ink-soft">
-              Every riddle is a small performance: the question sits with you,
-              then the answer lands — in the elder’s own voice. Tap the card.
+              Every riddle is a small performance. The question sits with
+              you, then the answer lands in the elder’s own voice. Tap the
+              card.
             </p>
             <div className="mt-7">
               <RiddleCard />
@@ -88,8 +89,8 @@ export default function HeritagePage() {
             </h2>
             <p className="mx-auto mt-3 max-w-lg leading-relaxed text-ink-soft">
               Riddles and proverbs are collected through the contribute tool
-              and elder recording drives across the Confluence region — with
-              consent and credit handled at the door.
+              and elder recording drives across the Confluence region, with
+              consent and credit settled at submission.
             </p>
             <Link
               href="/contribute"

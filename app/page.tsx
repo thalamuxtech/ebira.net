@@ -64,7 +64,7 @@ function Problem() {
           There is no single place online where a young Ebira person in Lagos,
           London, or Houston can look up a word, hear it spoken correctly, read
           a riddle their grandmother knew, or start learning from scratch.
-          Haleyouth already runs the pieces — Ebira.net holds them together.
+          Haleyouth Foundation already runs the pieces. Ebira.net holds them together.
         </p>
       </Reveal>
 
@@ -98,12 +98,12 @@ function Pillars() {
             One platform, nine pillars
           </p>
           <h2 className="display mt-5 max-w-3xl text-3xl font-semibold leading-tight text-ink sm:text-5xl">
-            Everything a living language needs, in one place.
+            Nine pillars, each making the others stronger.
           </h2>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-soft">
-            Each pillar is useful on its own, and each one makes the others
-            stronger. The dictionary feeds the translator; contributors feed
-            the corpus; the corpus feeds voice and research.
+            The dictionary feeds the translator. Contributors grow the corpus,
+            and the corpus gives the language a voice. Nothing here stands
+            alone, and nothing waits for everything else to finish.
           </p>
         </Reveal>
 
@@ -151,7 +151,7 @@ const STEPS = [
   {
     n: "01",
     title: "Preserve",
-    body: "Turn scattered Ebira knowledge — words, riddles, proverbs, stories, recordings — into an open, structured, permanent digital record.",
+    body: "Turn scattered words, riddles, proverbs, stories, and recordings into an open, structured, permanent digital record.",
   },
   {
     n: "02",
@@ -173,7 +173,7 @@ function HowItWorks() {
           How it works
         </p>
         <h2 className="display mt-5 max-w-2xl text-3xl font-semibold leading-tight text-ink sm:text-5xl">
-          Three jobs, one arc.
+          Preserve, engage, enable.
         </h2>
       </Reveal>
       <RevealGroup className="mt-14 grid gap-4 md:grid-cols-3">
@@ -216,8 +216,8 @@ function Roadmap() {
             Every phase ships something real.
           </h2>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-soft">
-            We do not wait for the whole platform to be “done.” Two years from
-            foundation to a university-backed education pathway.
+            We do not wait for the whole platform to be finished. The plan runs two
+            years, from foundation to a university-backed education pathway.
           </p>
         </Reveal>
 
@@ -278,11 +278,11 @@ function Community() {
           Rooted in Ebiraland, reviewed by its custodians.
         </h2>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink-soft">
-          Ebira.net wraps six years of Haleyouth’s work in Ebira-speaking
+          Ebira.net rests on six years of Haleyouth’s work in Ebira-speaking
           territory. A Community Advisory Board signs off on sensitive content,
-          and the Chief Language Advisor — Alhaji Salawo S. Salami, Chairman of
-          the Ebira Development Project — is the final authority on orthography
-          and lexical correctness.
+          and the Chief Language Advisor, Alhaji Salawo S. Salami of the Ebira
+          Development Project, has the final say on orthography and lexical
+          correctness.
         </p>
       </Reveal>
 
@@ -324,15 +324,15 @@ function OpenCorpus() {
                 <ShieldCheck size={16} /> Open corpus &amp; API
               </p>
               <h2 className="display mt-4 text-3xl font-semibold leading-tight sm:text-4xl">
-                Open by default. Owned by the community.
+                Open by default, owned by the community.
               </h2>
               <p className="mt-4 max-w-xl leading-relaxed text-[#b9bfd2]">
-                Every dataset ships CC BY 4.0, every line of code Apache 2.0.
-                Contributors consent at submission, are credited unless they
-                choose anonymity, and may withdraw within a defined window. A
-                versioned read API serves Masakhane teams, university labs, and
-                app developers — the data spine that makes Ebira a
-                resource-rich language.
+                Every dataset ships CC BY 4.0 and every line of code Apache
+                2.0. Contributors consent at submission, are credited unless
+                they choose anonymity, and may withdraw within a defined
+                window. A versioned read API serves Masakhane teams,
+                university labs, and app developers. This is the data spine
+                that moves Ebira toward the resource-rich languages.
               </p>
               <a
                 href="https://github.com/thalamuxtech/ebira.net"
@@ -379,12 +379,12 @@ function Waitlist() {
             Be first through the door
           </p>
           <h2 className="display mt-5 text-3xl font-semibold leading-tight text-ink sm:text-5xl">
-            Add your name — then add{" "}
+            Add your name, then add{" "}
             <span className="italic text-clay">the first word you remember</span>.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-ink-soft">
-            Join the waitlist for launch news, contributor drives, and diaspora
-            events. Wherever you are in the world, the language has a place for
+            Join the waitlist for launch news, contributor drives, and
+            diaspora events. Wherever you live, the language has a place for
             you.
           </p>
           <div className="mx-auto mt-9 max-w-xl">

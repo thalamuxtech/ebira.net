@@ -48,7 +48,7 @@ export function Translator() {
         <motion.button
           type="button"
           onClick={swap}
-          aria-label={`Swap direction — currently ${from} to ${to}`}
+          aria-label={`Swap direction (currently ${from} to ${to})`}
           animate={reduced ? undefined : { rotate: flips * 180 }}
           transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
           className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border border-line-strong bg-sunken text-ink-soft transition-colors duration-200 hover:border-gold hover:text-gold-deep"
@@ -116,7 +116,7 @@ export function Translator() {
               </span>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">
                 The preview lexicon is tiny. At launch, misses fall through to
-                the parallel corpus — and sentence-level drafts are clearly
+                the parallel corpus, and sentence-level drafts are clearly
                 flagged for community correction, never presented as fact.
               </p>
               <Link
