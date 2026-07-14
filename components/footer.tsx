@@ -14,8 +14,18 @@ export function Footer() {
             <Wordmark />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-soft">
               The digital home for the Ebira language, its people, and its
-              diaspora. A Haleyouth Foundation programme, built openly with the
-              community.
+              diaspora — built openly with the community.
+            </p>
+            <p className="mt-3 text-sm text-ink-soft">
+              A project by{" "}
+              <a
+                href="https://haleyouthfoundation.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-clay underline-offset-4 transition-colors duration-200 hover:text-clay-strong hover:underline"
+              >
+                Haleyouth Foundation
+              </a>
             </p>
             <p className="mt-4 text-xs leading-relaxed text-ink-faint">
               Data CC BY 4.0 · Code Apache 2.0 · Dataset cards CC0. Nothing on
@@ -72,6 +82,16 @@ export function Footer() {
               Haleyouth Foundation
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm text-ink-soft">
+              <li>
+                <a
+                  href="https://haleyouthfoundation.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors duration-200 hover:text-clay"
+                >
+                  haleyouthfoundation.org
+                </a>
+              </li>
               <li>CAC RC-138260</li>
               <li>Okene, Kogi State, Nigeria</li>
               <li>
