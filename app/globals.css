@@ -116,17 +116,17 @@ body {
   background: var(--gold);
 }
 
-/* Woven triangle divider drawn with CSS — cheap, crisp, Ebira-textile inspired */
+/* Woven divider drawn with CSS — cheap, crisp, Ebira-textile inspired */
 .motif-divider {
   height: 6px;
   background-image: linear-gradient(
-    135deg,
-    var(--clay) 25%,
-    var(--gold) 25%,
-    var(--gold) 50%,
+    44deg,
+    #00450e 25%,
+    #00b70c 25%,
+    #ffffff 50%,
     var(--ink) 50%,
-    var(--ink) 75%,
-    var(--sage) 75%
+    #000000 75%,
+    #f2ff00 75%
   );
   background-size: 24px 6px;
   opacity: 0.85;
