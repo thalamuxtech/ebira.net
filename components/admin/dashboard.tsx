@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Check,
   Inbox,
@@ -29,23 +29,28 @@ export function Dashboard({ session }: { session: Session }) {
   const [error, setError] = useState("");
   const [actingOn, setActingOn] = useState<string | null>(null);
 
-  const reload = useCallback(async () => {
-    setError("");
-    try {
-      const [s, w] = await Promise.all([
-        fetchPendingSubmissions(),
-        fetchWaitlist(),
-      ]);
-      setSubs(s);
-      setWait(w);
-    } catch {
-      setError("Could not load data. Check your connection and role, then refresh.");
-    }
-  }, []);
+  const [refreshKey, setRefreshKey] = useState(0);
+  const reload = () => setRefreshKey((k) => k + 1);
 
   useEffect(() => {
-    reload();
-  }, [reload]);
+    let cancelled = false;
+    Promise.all([fetchPendingSubmissions(), fetchWaitlist()])
+      .then(([s, w]) => {
+        if (cancelled) return;
+        setSubs(s);
+        setWait(w);
+        setError("");
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setError(
+          "Could not load data. Check your connection and role, then refresh."
+        );
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [refreshKey]);
 
   async function act(sub: Submission, decision: "approve" | "reject") {
     setActingOn(sub.id);
