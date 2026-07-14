@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ShieldCheck } from "lucide-react";
 import { PILLARS } from "@/lib/site";
 
 const YEAR = 2026;
@@ -138,14 +139,15 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-line pt-6 text-xs text-ink-faint sm:flex-row sm:items-center">
-          <p>
+          <p className="flex items-center gap-2">
             {`© ${YEAR} Haleyouth Foundation · Language & Heritage programme`}
-            {" · "}
             <Link
               href="/admin"
-              className="transition-colors duration-200 hover:text-clay"
+              aria-label="Reviewer sign-in"
+              title="Reviewer sign-in"
+              className="inline-flex h-7 w-7 items-center justify-center rounded-full text-ink-faint transition-colors duration-200 hover:bg-sunken hover:text-clay"
             >
-              Admin
+              <ShieldCheck size={14} aria-hidden="true" />
             </Link>
           </p>
           <p className="display text-sm text-ink-soft">
