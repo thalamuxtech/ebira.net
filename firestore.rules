@@ -1,0 +1,79 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isEditor() {
+      return request.auth != null
+        && request.auth.token.role in ['editor', 'admin'];
+    }
+
+    // ── Published content: world-readable when published, editor-writable ──
+    match /entries/{id} {
+      allow get: if resource.data.status == 'published' || isEditor();
+      allow list: if isEditor()
+        || (request.query.limit <= 100);
+      allow write: if isEditor();
+    }
+    match /translations/{id} {
+      allow read: if true;
+      allow write: if isEditor();
+    }
+    match /heritage/{id} {
+      allow get: if resource.data.status == 'published' || isEditor();
+      allow list: if isEditor() || (request.query.limit <= 100);
+      allow write: if isEditor();
+    }
+    match /history/{id} {
+      allow get: if resource.data.status == 'published' || isEditor();
+      allow list: if isEditor() || (request.query.limit <= 100);
+      allow write: if isEditor();
+    }
+    match /people/{id} {
+      allow get: if resource.data.status == 'published' || isEditor();
+      allow list: if isEditor() || (request.query.limit <= 100);
+      allow write: if isEditor();
+    }
+    match /lessons/{id} {
+      allow read: if true;
+      allow write: if isEditor();
+    }
+    match /stats/{id} {
+      allow read: if true;
+      allow write: if isEditor();
+    }
+
+    // ── Contribute queue: anyone may create, only editors may see or act ──
+    match /submissions/{id} {
+      allow create: if request.resource.data.keys().hasOnly(
+          ['kind', 'ebira', 'english', 'dialect', 'note', 'contributorName',
+           'anonymous', 'consent', 'status', 'queuedAt', 'createdAt'])
+        && request.resource.data.kind in ['word', 'riddle', 'proverb', 'story']
+        && request.resource.data.consent == true
+        && request.resource.data.status == 'pending_review'
+        && request.resource.data.ebira is string
+        && request.resource.data.ebira.size() > 0
+        && request.resource.data.ebira.size() < 2000
+        && request.resource.data.english is string
+        && request.resource.data.english.size() < 2000;
+      allow read, update, delete: if isEditor();
+    }
+
+    // ── Waitlist: anyone may join, only editors may read ──
+    match /waitlist/{id} {
+      allow create: if request.resource.data.keys().hasOnly(
+          ['email', 'source', 'queuedAt', 'createdAt'])
+        && request.resource.data.email is string
+        && request.resource.data.email.size() > 5
+        && request.resource.data.email.size() < 200
+        && request.resource.data.email.matches('.*@.*\\..*');
+      allow read, delete: if isEditor();
+      allow update: if false;
+    }
+
+    // ── Everything else is closed until its pillar ships ──
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

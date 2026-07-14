@@ -131,7 +131,16 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-line pt-6 text-xs text-ink-faint sm:flex-row sm:items-center">
-          <p>{`© ${YEAR} Haleyouth Foundation · Language & Heritage programme`}</p>
+          <p>
+            {`© ${YEAR} Haleyouth Foundation · Language & Heritage programme`}
+            {" · "}
+            <Link
+              href="/admin"
+              className="transition-colors duration-200 hover:text-clay"
+            >
+              Admin
+            </Link>
+          </p>
           <p className="display text-sm text-ink-soft">
             Ẹ́bírà lives here.
           </p>
