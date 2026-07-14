@@ -70,7 +70,7 @@ export function Dashboard({ session }: { session: Session }) {
   }
 
   return (
-    <section className="mx-auto max-w-6xl px-5 pb-16 pt-28 sm:px-6 sm:pt-32">
+    <section className="mx-auto max-w-6xl px-5 pb-16 pt-40 sm:px-6 sm:pt-56">
       <header className="flex flex-wrap items-center justify-between gap-4">
         <div>
           <p className="rule-ornament text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">

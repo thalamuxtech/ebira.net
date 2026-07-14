@@ -36,7 +36,7 @@ export default async function EntryPage({ params }: Params) {
   const next = ENTRIES[(index + 1) % ENTRIES.length];
 
   return (
-    <article className="mx-auto max-w-4xl px-5 pb-16 pt-32 sm:px-6 sm:pt-40">
+    <article className="mx-auto max-w-4xl px-5 pb-16 pt-40 sm:px-6 sm:pt-56">
       <Link
         href="/dictionary"
         className="inline-flex items-center gap-1.5 text-sm font-medium text-ink-soft transition-colors duration-200 hover:text-clay"

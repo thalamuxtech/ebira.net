@@ -14,7 +14,7 @@ interface PageHeroProps {
 export function PageHero({ kicker, title, lede, status, children }: PageHeroProps) {
   return (
     <section className="relative overflow-hidden border-b border-line bg-sunken/50">
-      <div className="mx-auto max-w-6xl px-5 pb-14 pt-32 sm:px-6 sm:pb-16 sm:pt-40">
+      <div className="mx-auto max-w-6xl px-5 pb-14 pt-40 sm:px-6 sm:pb-16 sm:pt-56">
         <div className="flex flex-wrap items-center gap-3">
           <p className="rule-ornament text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
             {kicker}
