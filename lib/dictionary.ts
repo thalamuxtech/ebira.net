@@ -170,6 +170,51 @@ export const ENTRIES: Entry[] = [
   },
 ];
 
+/** Strip tone marks and case so search works however the user types. */
+export function fold(s: string): string {
+  return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+}
+
+/** All entries in dictionary (alphabetical) order. */
+export const SORTED_ENTRIES: Entry[] = [...ENTRIES].sort((a, b) =>
+  fold(a.headword).localeCompare(fold(b.headword))
+);
+
+/** Letters of the alphabet that currently have entries. */
+export const LETTERS: string[] = Array.from(
+  new Set(SORTED_ENTRIES.map((e) => fold(e.headword)[0].toUpperCase()))
+).sort();
+
+export function entriesByLetter(letter: string): Entry[] {
+  return SORTED_ENTRIES.filter(
+    (e) => fold(e.headword)[0].toUpperCase() === letter.toUpperCase()
+  );
+}
+
+/**
+ * Ranked suggestions for the search dropdown: prefix matches on the
+ * headword first, then prefix matches on any sense word, then substring
+ * matches anywhere.
+ */
+export function suggestEntries(query: string, limit = 7): Entry[] {
+  const q = fold(query.trim());
+  if (!q) return [];
+  const scored = ENTRIES.map((e) => {
+    const head = fold(e.headword);
+    const senses = e.senses.map(fold).join(" ");
+    let score = -1;
+    if (head.startsWith(q)) score = 0;
+    else if (senses.split(/[^a-z]+/).some((w) => w.startsWith(q))) score = 1;
+    else if (head.includes(q) || senses.includes(q)) score = 2;
+    else if (fold(e.domain).includes(q) || fold(e.literal ?? "").includes(q))
+      score = 3;
+    return { e, score };
+  })
+    .filter((s) => s.score >= 0)
+    .sort((a, b) => a.score - b.score || fold(a.e.headword).localeCompare(fold(b.e.headword)));
+  return scored.slice(0, limit).map((s) => s.e);
+}
+
 export function searchEntries(query: string): Entry[] {
   const q = query
     .trim()
